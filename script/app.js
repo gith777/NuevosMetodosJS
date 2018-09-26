@@ -51,11 +51,77 @@ orden alfabetico*/
 
 console.log(amigos.sort());
 
-var pos_jonathan=amigos.indexOf('Yefersson');
+var pos_yefersson=amigos.indexOf('Yefersson');
 
-console.log(pos_jonathan);
+console.log(pos_yefersson);
+
+/*---------------------------------*/
+
+amigos.splice(pos_yefersson, 1);
+
+/*splice elimina la cantidad de elementos que especifiquemos a partir de una posicion*/
+console.log(amigos);
+
+/*-----------------------------------------*/
+
+var persona={
+
+	nombre:"Yefersson",
+	 edad:27, 
+	 tiene_mascota:true,
+	 mascota:{nombre:"Fido", raza:"galgo"}
+
+	}
+
+/*
+console.log(persona['nombre']);
+console.log(persona.nombre);
+*/
+
+console.log(persona.nombre);
+console.log(persona.mascota.raza);
+
+var ahora= new Date();
+console.log(ahora);
 
 
+/*el typeof me permite saber que tipo de dato es... */
+console.log(typeof persona.edad);
+console.log(persona.edad);
+console.log(persona.edad.toString());
+
+var cantidad=" 25 manzanas";
+console.log(parseInt(cantidad)); 
+
+/*-----------------------------------------------------*/
+/*Me busca una cadena o una sub-cadena*/
+
+var texto= " En algun lugar de la mancha de cuyo nombre no quiero acordarme "; 
+
+console.log(texto.length);
+console.log(texto.indexOf('lugar'));
+
+/*-----------------------------------------------------*/
+/*Metodo slice - extraer*/
+
+
+var palabra= texto.slice(9, 14);
+console.log(palabra);
+
+var palabra2= texto.substr(9, 5);
+console.log(palabra2);
+
+/*Metodo replace - me remplaza al y los sustituye por otra cosa*/
+console.log(texto.replace('mancha','emprendedor'));
+
+
+/*Este metodo me permite cambiar todo a mayusculas o todo a minusculas*/
+
+console.log(texto.toUpperCase());
+console.log(texto.toLowerCase());
+
+console.log(texto);
+console.log(texto.trim());
 
 
 
